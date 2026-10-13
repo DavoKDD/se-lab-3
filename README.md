@@ -1,5 +1,8 @@
 # SE Spaceship
 
+[![Java CI with Maven](https://github.com/DavoKDD/se-lab-3/actions/workflows/maven.yml/badge.svg)](https://github.com/DavoKDD/se-lab-3/actions/workflows/maven.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 This is a sample application for the [Software Engineering](http://www.mit.bme.hu/oktatas/targyak/vimiab04) course at BME MIT.
 
 The application is simplified and deliberately contains bugs.
@@ -35,8 +38,7 @@ The project represents an alpha version of a spaceship.
 - Currently two firing modes (`FiringMode`) are supported: firing only one or all instances of a given weapon type.
 - Lasers are not yet implemented, but the code for torpedo stores are ready (`TorpedoStore`).
 - For the GT4500 ship the rules for firing torpedoes can be found in the Javadoc comment of method `fireTorpedos`. They are already partially implemented.
-- There are currently two tests (`GT4500Test`), but be aware that they are not proper unit tests, as they do not isolate the dependencies of the tested class.
+- There are five tests in `GT4500Test` and `TorpedoStoreTest`.
 
-The code can be built, but due to missing features one of the tests fails. The first exercise will be to fix this.
+Run `./mvnw verify` to build the project and run the tests.
 
-// TODO: remove this line
